@@ -42,10 +42,6 @@ class RxCBPeripheral: RxPeripheralType {
         RxCBPeripheral.putInternalPeripheralDelegateRef(cbPeripheral: peripheral)
     }
     
-    public var coreBluetoothPeripheral: CBPeripheral {
-        return (peripheral as! RxCBPeripheral).peripheral
-    }
-
     /// Peripheral's identifier
     var identifier: UUID {
         return peripheral.identifier
